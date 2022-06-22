@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @media (max-width: 1024px) {
+        column-gap: 20px;
+    }
+
+    @media (max-width: 576px) {
+        display: block;
+    }
+}
